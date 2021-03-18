@@ -1,0 +1,65 @@
+module.exports = (api, options, rootOptions) => {
+    api.extendPackage({
+        private: true,
+        scripts: {
+            serve: 'vue-cli-service serve --host 0.0.0.0',
+            build: 'vue-cli-service build',
+            tag: 'dogit flow -n ./build/dogit.config.js',
+            'changelog:prod': 'conventional-changelog -t xjzmy-prod- -n ./build/changelog.config.js -p angular -i ./build/version.md -s -r 0',
+            'changelog:test': 'conventional-changelog -t xjzmy-test- -n ./build/changelog.config.js -p angular -i ./build/version.test.md -s -r 0',
+            stylelint: 'stylelint ./src/**/*.{vue,html,css,less,scss,sass} --fix',
+        },
+        dependencies: {
+            '@mdi/js': '^5.9.55',
+            axios: '^0.21.1',
+            dayjs: '^1.10.4',
+            echarts: '^5.0.2',
+            'element-ui': '^2.15.1',
+            qs: '^6.9.6',
+            store: '^2.0.12',
+            vue: '^2.6.12',
+            'vue-router': '^3.5.1',
+            vuetify: '^2.4.6',
+            vuex: '^3.6.2',
+        },
+        devDependencies: {
+            '@commitlint/cli': '^12.0.1',
+            '@commitlint/config-conventional': '^12.0.1',
+            '@trscd/stylelint-config-tpconfig': '^0.0.6',
+            '@vue/cli-plugin-babel': '^4.5.11',
+            '@vue/cli-plugin-router': '^4.5.11',
+            '@vue/cli-plugin-vuex': '^4.5.11',
+            '@vue/cli-service': '^4.5.11',
+            '@vue/eslint-config-standard': '^6.0.0',
+            'babel-eslint': '^10.1.0',
+            'babel-plugin-component': '^1.1.1',
+            'babel-plugin-transform-remove-console': '^6.9.4',
+            'cz-conventional-changelog': '^3.3.0',
+            eslint: '^7.22.0',
+            'eslint-config-tpconfig': '^0.3.3',
+            'eslint-plugin-vue': '^7.7.0',
+            husky: '^5.1.3',
+            less: '^3.13.1',
+            'less-loader': '^5.0.0',
+            sass: '^1.32.8',
+            'sass-loader': '^8.0.0',
+            stylelint: '^13.12.0',
+            'stylelint-declaration-block-no-ignored-properties': '^2.3.0',
+            'stylelint-webpack-plugin': '^2.1.1',
+            'vue-cli-plugin-vuetify': '^2.2.2',
+            'vue-template-compiler': '^2.6.12',
+            'vuetify-loader': '^1.7.2',
+        },
+        config: {
+            commitizen: {
+                path: 'cz-conventional-changelog',
+            },
+        },
+        husky: {
+            hooks: {
+                'commit-msg': 'commitlint -E HUSKY_GIT_PARAMS',
+            },
+        },
+    });
+    api.render('./template', options);
+};

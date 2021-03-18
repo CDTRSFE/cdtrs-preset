@@ -1,0 +1,18 @@
+{
+    "useConfigFiles": true,
+    "useTaobaoRegistry": true,
+    "packageManager": "npm",
+    "router": false,
+    "vuex": false,
+    "cssPreprocessor": "less",
+    "routerHistoryMode": false,
+    "plugins": {
+        "@vue/cli-plugin-babel": {},
+        "@vue/cli-plugin-eslint": {
+            "config": "standard",
+            "lintOn": [
+                "save"
+            ]
+        }
+    }
+}

@@ -1,0 +1,92 @@
+// 全局样式
+html {
+    overflow: auto;
+    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, 微软雅黑, Arial, sans-serif;
+}
+.scroll-area {
+    height: 0;
+    flex-grow: 1;
+    overflow: auto;
+}
+.pretty-scroll-bar {
+    &::-webkit-scrollbar-thumb {
+        background-color: #e9ecef;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+        color: transparent;
+    }
+    &::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+    }
+}
+.truncate {
+    table {
+        td {
+            white-space: nowrap !important;
+            overflow: hidden !important;
+            text-overflow: ellipsis !important;
+        }
+    }
+}
+.no-border {
+    td,
+    th {
+        border: none !important;
+    }
+    tbody {
+        tr:nth-child(odd) {
+            background: #f4f6f7;
+        }
+    }
+}
+.title-link {
+    text-decoration: none;
+    color: #3d3d3d !important;
+}
+.title-link:hover {
+    color: #d64541 !important;
+}
+
+// Vuetify样式修正
+.v-input__icon {
+    height: 20px;
+    .v-icon--svg {
+        width: 20px;
+        height: 20px;
+        color: #aaa;
+    }
+}
+.v-input__slot {
+    padding-left: 8px !important;
+}
+.v-input__prepend-inner,
+.v-input__append-inner {
+    margin-top: 5px !important;
+}
+.v-input__prepend-inner {
+    padding-right: 5px !important;
+}
+
+// element-ui 样式修正
+.el-input__inner {
+    height: 30px !important;
+    border-radius: 2px !important;
+}
+.el-input__icon {
+    line-height: 30px !important;
+}
+.el-date-editor .el-range-separator {
+    padding: 0 !important;
+    height: 30px !important;
+}
+.el-date-editor .el-range__icon {
+    height: 30px !important;
+}
+.el-table {
+    color: #3d3d3d !important;
+}
+.el-table--enable-row-hover .el-table__body tr:hover > td {
+    background-color: #f4e0e1 !important;
+}

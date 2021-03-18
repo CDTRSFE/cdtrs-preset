@@ -1,0 +1,27 @@
+{
+  "name": "cdtrs-preset",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue-preset"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@trscd/stylelint-config-tpconfig": "^0.0.6",
+    "@vue/eslint-config-standard": "^6.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.22.0",
+    "eslint-config-tpconfig": "^0.3.3",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "eslint-plugin-vue": "^7.7.0",
+    "stylelint": "^13.12.0"
+  }
+}

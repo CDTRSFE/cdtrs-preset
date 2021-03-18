@@ -1,0 +1,22 @@
+$list-item-action-icon-margin: 10px;
+$text-field-solo-dense-control-min-height: 30px;
+$text-field-filled-full-width-outlined-single-line-slot-min-height: 30px;
+// $text-field-outlined-fieldset-border-width: 0px;
+$slider-thumb-focused-size-increase: 20px;
+$text-field-append-prepend-margin: 10px;
+$text-field-border-radius: 2px;
+$text-field-outlined-fieldset-border: 1px solid currentColor;
+$btn-border-radius: 2px;
+$card-border-radius: 2px;
+$text-field-dense-icon-append-prepend-margin-top: 6px;
+$btn-sizes: (
+    'default': 30
+);
+$material-light: (
+    'background': #f5f7fa,
+    'text-fields': (
+        'outlined': #dedede,
+    )
+);
+$text-field-solo-dense-outer-margin-top: 1px;
+$body-font-family: 'Helvetica Neue',helvetica,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','微软雅黑',arial,sans-serif;
