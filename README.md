@@ -1,4 +1,4 @@
-# cdtrs-preset
+# vtris-preset
 
 一个用于自动生成 Vue2 项目结构的 Vue CLI 4.x preset，包含了创建项目所需的大部分依赖项、配置文件、常用组件和插件等。
 
@@ -7,7 +7,7 @@
 ## 使用
 
 ```shell
-vue create --preset CDTRSFE/cdtrs-preset <app-name>
+vue create --preset CDTRSFE/vtris-preset <app-name>
 ```
 
 创建完成后目录结构
@@ -27,7 +27,6 @@ vue create --preset CDTRSFE/cdtrs-preset <app-name>
 │   │   ├── fonts                   # 字体文件
 │   │   ├── images                  # 图片
 │   │   ├── js                      # js文件或json资源
-│   │   ├── logo.svg
 │   │   ├── maps                    # echarts的地图数据
 │   │   │   ├── china.json
 │   │   │   └── yunnan.json
