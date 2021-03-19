@@ -94,15 +94,15 @@ vue create --preset CDTRSFE/vtris-preset <app-name>
 
 已预置组件如下：
 
-* `ConfirmBox.vue` ———— 确认框，已在 `/src/plugins/confirm.js` 中注册，使用时直接调用 `this.$confirm`
+* `ConfirmBox.vue` —— 确认框，已在 `/src/plugins/confirm.js` 中注册，使用时直接调用 `this.$confirm`
 
-* `TrsFormItem.vue` ———— 表单项
+* `TrsFormItem.vue` —— 表单项
 
-* `TrsPagination.vue` ———— 统一样式的分页组件
+* `TrsPagination.vue` —— 统一样式的分页组件
 
-* `TrsUploader.vue` ———— 文件上传组件
+* `TrsUploader.vue` —— 文件上传组件
 
-* `Echarts.vue` ———— 对**echarts**进行封装的组件
+* `Echarts.vue` —— 对**echarts**进行封装的组件
 
 ## 指令
 
@@ -110,7 +110,7 @@ vue create --preset CDTRSFE/vtris-preset <app-name>
 
 已预置指令如下：
 
-* `clickoutside` ———— 点击元素以外，用于关闭菜单
+* `clickoutside` —— 点击元素以外，用于关闭菜单
 
 ## 过滤器
 
@@ -118,7 +118,7 @@ vue create --preset CDTRSFE/vtris-preset <app-name>
 
 已预置过滤器如下：
 
-* `formatdate` ———— 日期过滤
+* `formatdate` —— 日期过滤
 
 ## Vuex
 
