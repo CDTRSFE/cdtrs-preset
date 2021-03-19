@@ -22,19 +22,60 @@ vue create --preset CDTRSFE/vtris-preset <app-name>
 │   ├── commit.hbs
 │   └── dogit.config.js
 ├── commitlint.config.js
+├── doc                             # 项目说明文档
+│   ├── docs
+│   │   ├── about
+│   │   │   ├── assets
+│   │   │   ├── envs.md
+│   │   │   ├── README.md
+│   │   │   ├── restruct.md
+│   │   │   └── skill.md
+│   │   ├── deploy
+│   │   │   ├── assets
+│   │   │   ├── commit.md
+│   │   │   ├── README.md
+│   │   │   └── version.md
+│   │   ├── develop
+│   │   │   ├── assets
+│   │   │   ├── component.md
+│   │   │   ├── icon.md
+│   │   │   ├── README.md
+│   │   │   ├── start.md
+│   │   │   ├── urlremember.md
+│   │   │   └── vpn.md
+│   │   ├── feature
+│   │   │   ├── assets
+│   │   │   ├── authentication.md
+│   │   │   └── newspaper.md
+│   │   ├── README.md
+│   │   ├── standard
+│   │   │   ├── assets
+│   │   │   ├── commit.md
+│   │   │   ├── develop.md
+│   │   │   └── README.md
+│   │   └── .vuepress
+│   │       ├── config.js
+│   │       ├── dev.html
+│   │       ├── sidebar.js
+│   │       └── ssr.html
+│   ├── .gitignore
+│   ├── package.json
+│   ├── package-lock.json
+│   └── README.md
+├── .eslintignore
 ├── .eslintrc.js
 ├── .gitignore
+├── public
+│   ├── app.config.js
+│   ├── favicon.ico
+│   └── index.html
 ├── src
 │   ├── App.vue
 │   ├── assets                      # 静态资源
 │   │   ├── fonts                   # 字体文件
 │   │   ├── images                  # 图片
 │   │   ├── js                      # js文件或json资源
-│   │   ├── maps                    # echarts的地图数据
-│   │   │   ├── china.json
-│   │   │   └── yunnan.json
-│   │   └── styles
-│   │       └── variable.less       # less变量
+│   │   └── maps                    # echarts的地图数据
 │   ├── components
 │   │   ├── common                  # 全局公用组件，位于此目录下的组件会自动注册
 │   │   │   ├── ConfirmBox.vue
@@ -48,7 +89,6 @@ vue create --preset CDTRSFE/vtris-preset <app-name>
 │   ├── mixins
 │   │   └── urlRemember.js          # 路由记忆
 │   ├── plugins
-│   │   ├── auth.js
 │   │   ├── axios.js
 │   │   ├── confirm.js
 │   │   ├── directives.js
@@ -69,10 +109,8 @@ vue create --preset CDTRSFE/vtris-preset <app-name>
 │   │   └── index.js
 │   ├── scss
 │   │   ├── element-variables.scss  # element-ui 全局变量设置
-│   │   ├── reset.scss
 │   │   └── variables.scss          # 全局 scss 变量
 │   ├── service
-│   │   └── session.js
 │   ├── store
 │   │   ├── index.js
 │   │   ├── modules
