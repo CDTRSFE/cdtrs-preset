@@ -25,23 +25,4 @@ const router = new VueRouter({
     routes,
 });
 
-// 本地记录某些URL地址
-router.afterEach(to => {
-    const urls = Vue.prototype.$localstore.get('urlhistory') || {};
-    urls[to.name] = to.fullPath;
-    Vue.prototype.$localstore.set('urlhistory', urls);
-});
-
-// 将URL变化映射到iframe上
-router.afterEach(to => {
-    window.parent.postMessage(JSON.stringify({
-        from: 'net',
-        action: 'navigate',
-        data: {
-            module: 'net',
-            path: to.fullPath,
-        },
-    }), '*');
-});
-
 export default router;
