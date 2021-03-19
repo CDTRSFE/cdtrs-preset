@@ -173,6 +173,8 @@ npm run changelog:test # 测试环境的changelog
 
 ## 相关链接
 
++ 更通用的vue-preset：[https://github.com/CDTRSFE/vue-preset](https://github.com/CDTRSFE/vue-preset)
+
 + Vue 项目规范文档: [https://wiki.trscd.com.cn/pages/viewpage.action?pageId=59900220](https://wiki.trscd.com.cn/pages/viewpage.action?pageId=59900220)
 
 + ESLint 配置: [https://github.com/CDTRSFE/eslint-config-tpconfig](https://github.com/CDTRSFE/eslint-config-tpconfig)
