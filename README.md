@@ -2,6 +2,9 @@
 
 一个用于自动生成 Vue2 项目结构的 Vue CLI 4.x preset，包含了创建项目所需的大部分依赖项、配置文件、常用组件和插件等。
 
+> 本项目源自 [CDTRSFE/vue-preset](https://github.com/CDTRSFE/vue-preset) 由于加入了更多更细可能更主观的预设，所以单独拧出来了，如果你需要通用的 vue preset，请使用 [CDTRSFE/vue-preset](https://github.com/CDTRSFE/vue-preset)
+
+
 > 模板存放在 `/generator/template`，创建项目时自动生成，如果要调整模板需注意：空文件和文件夹会被忽略，模板要考虑[文件名的边界情况](https://cli.vuejs.org/zh/dev-guide/plugin-dev.html#%E6%96%87%E4%BB%B6%E5%90%8D%E7%9A%84%E8%BE%B9%E7%95%8C%E6%83%85%E5%86%B5)，以点开头的模板需要使用下划线取代那个点，以下划线开头的文件需要使用两个下划线来取代单个下划线。
 
 ## 使用
