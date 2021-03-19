@@ -1,0 +1,21 @@
+{
+  "name": "cdtrsfe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs --temp .temp",
+    "build": "vuepress build docs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vuepress/plugin-medium-zoom": "^1.7.1",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0",
+    "vuepress": "^1.7.1"
+  },
+  "devDependencies": {
+    "vuepress-plugin-demo-code": "^0.5.2"
+  }
+}
