@@ -11,7 +11,6 @@ import './plugins/print';
 import './plugins/message';
 import './plugins/auth';
 import './plugins/theme';
-import './plugins/client';
 import './plugins/localstore';
 import './plugins/stop_list_group';
 import './plugins/scrolltop';
